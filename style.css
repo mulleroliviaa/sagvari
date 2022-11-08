@@ -5,10 +5,10 @@
 }
 a:link{
     color: rgb(255, 255, 255);
-    text-decoration: none;
+    text-decoration: blue;
 }
 a:visited{
-    text-decoration: none;
+    text-decoration: yellow;
     color: rgb(255, 255, 255);
 }
 #nev,#suli{
@@ -24,7 +24,7 @@ html, body{
     height: 80%;
 }
 body{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(36, 9, 87);
     font-family: 'Poppins',sans-serif;
     font-weight: 400;
 }
