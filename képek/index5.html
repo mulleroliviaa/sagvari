@@ -1,0 +1,310 @@
+<center>
+    <table class="keret">
+        <tbody><tr>
+            <td class="s"></td>
+            <td class="v"></td>
+            <td class="s"></td>
+        </tr>
+        <tr>
+            <td class="v"></td>
+            <td class="o">
+                <table class="bele">
+                    <tbody><tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr class="as">
+                        <td>0</td>
+                        <td colspan="2">9</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                </tbody></table>
+            </td>
+            <td class="v"></td>
+        </tr>
+        <tr>
+            <td class="s"></td>
+            <td class="v"></td>
+            <td class="s"></td>
+        </tr>
+    </tbody></table>
+    <style>
+        table.keret {
+            border-spacing: 5px;
+            box-shadow: inset 2px 2px 7px rgb(0, 0, 0);
+            background-color: rgb(204, 168, 176);
+            padding: 4px;
+            border-radius: 18px;
+        }
+        td.s {
+            width: 20px;
+            height:20px;
+            background-color:rgb(168, 101, 37)
+            border= double 3px rgb(233, 194, 194);
+            box-shadow: inset 2px 2px 7px rgb(0, 0, 0);
+            border-radius: 8px;
+        }
+        td.v {
+            border: double 3px rgb (119, 128, 1)
+            box-shadow= inset 2px 2px 4px rgb(9, 9, 31);
+        }
+        td.o {
+            width: 800px;
+            height: 500px;
+            box-shadow: inset 2px 2px 7px rgb(0, 0, 0);
+            border-radius: 5px;
+            background-color: rgb(119, 128, 1);
+        }
+        table.bele {
+            width: 90%;
+            height: 90%;
+            margin: auto;
+            border-spacing: 25px;
+            box-shadow: inset 2px 2px 7px rgb(0, 0, 0);
+            background-color: rgb(179, 151, 74);
+            border-radius: 18px;
+        }
+        table.bele td {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 255, 221);
+            text-align: center;
+            box-shadow: inset 2px 2px 7px rgb(0, 0, 0);
+            border-radius: 5px;
+            font-size: 40px;
+            color:rgb(241, 246, 247);
+            text-shadow: 0px 0px 2px rgb(0, 0, 0);
+        }
+        tr.as td {
+            background-color:rgb(0, 204, 255);
+            font-size: 60px;
+        }
+    </style>
+    
+    <style>
+        .banner-btn{
+          margin: 70px auto 0;
+          text-align: center;
+        }
+        .banner-btn a{
+          width: 150px;
+          text-decoration: none;
+          display: inline-block;
+          margin: 0 10px;
+          padding: 12px 0;
+          color: #fff;
+          border: .5px solid black;
+          position: relative;
+          z-index: 1;
+          transition: color 0.5s;
+          font-family: Verdana;
+        }
+        .banner-btn a span{
+          width:  0%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #f49a1e;
+          z-index: -1;
+          transition: 0.5s;
+        
+        }
+        .banner-btn a:hover span{
+          width: 100%;
+        }
+        .banner-btn a:hover{
+          color: #fff;
+        }
+        
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 98%;
+        
+         
+        }
+        #banner{
+            background: url(ht.gif);
+            background-size: cover;
+            background-position: contain;
+            height: 75%;
+        }
+        .banner-text{
+            text-align: center;
+            color: #fff;
+            padding-top: 180px;
+        }
+        .banner-text h1{
+            font-size: 60px;
+            font-family: Verdana;
+        }
+        .banner-text p{
+            font-size: 25px;
+            font-family: Verdana;
+            margin-top: 50px;
+        }
+        .banner-btn{
+            margin: 70px auto 0;
+        }
+        .banner-btn a{
+            width: 150px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 12px 0;
+            color: #fff;
+            border: .5px solid #fff;
+            position: relative;
+            z-index: 1;
+            transition: color 0.5s;
+            font-family: Verdana;
+        }
+        .banner-btn a span{
+            width:  0%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #fff;
+            z-index: -1;
+            transition: 0.5s;
+        
+        }
+        .banner-btn a:hover span{
+            width: 100%;
+        }
+        .banner-btn a:hover{
+            color: black;
+        }
+    
+    </style>
+    
+    <center>    
+        <section id="banner">
+            <div class="banner-btn">
+                <body>
+                    <input type="number" value="5" onchange="a=Number(this.value)">
+                    <dl></dl>
+                    <input type="number" value="5" onchange="b=Number(this.value)">
+                    <dl></dl>
+                    <button onclick="f()">eredmény</button>
+                    <br>
+                    Kerület: <div id="x"></div> 
+                    <dl></dl>
+                    <br>
+                    Terület: <div id="y"></div>
+                
+                <style>
+                    div{
+                        box-shadow: 1px 1px 4px black;
+                        border-radius: 10px;
+                        padding: 10px;
+                        margin: 10px;
+                        text-align: center;
+                        background-color: rgba(204, 168, 176);
+                        display: inline-block;
+                    
+                        position: relative;        
+                    }
+                    body {
+                        background-color: rgb(255, 255, 255);
+                       text-align: center;
+                    }
+                </style>
+                
+                <center>
+               
+                </div></section></center></body>
+
+            <dl></dl>
+            <center><h1>Dolgozatok</h1>
+            <a href="./feladatok.html">további feladatok</a>
+            <a href="./10D_muller_olivia.zip">6.Feladat (Python)</a>
+
+    
+                <meta charset="utf-8">
+   
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    table {
+        border-spacing: 10px;
+    }
+    table.kp {
+        border: dotted 8px rgb(34, 99, 168);
+        border-radius: 12px;
+    }
+    td {
+        font-family: 'Lobster', cursive;
+        font-size: 100px;
+        border-radius:6px;
+        padding: 10px;
+        color: rgb(24, 147, 71);
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(225, 217, 49);
+        box-shadow: 1px 1px 4px Black;
+        text-shadow: 1px 1px 3px rgb(70, 67, 67);
+    }
+    td.o {
+        background-color: rgb(223, 212, 70);
+    }
+</style>
+<style>
+    @import url('main.css');
+    table {
+        border-spacing: 10px;
+    }
+    table.kp, table.fp {
+        border: double 5px rgb(9, 60, 83);
+        border-radius: 10px;
+        background-color: rgb(42, 209, 139);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.478);
+    }
+    td {
+        font-size: 15px;
+        border-radius:12px;
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(190, 212, 78);
+        box-shadow: 1px 1px 4px Black;
+        text-shadow: 1px 1px 3px rgba(67, 68, 70, 0.908);
+    }
+    td.fi {
+        border: double 5px rgb(24, 70, 110);
+    }
+    .kp td {
+        background-color: rgb(215, 143, 190);
+    }
+    .fp td {
+        background-color: rgb(132, 211, 225);
+    }
+    td.o {
+        background-color: rgb(107, 166, 203);
+    }
+</style>
+                
+                </center>
+
+<script>
+    function f() {
+        document.getElementById("x").innerHTML=2*(a+b)
+        document.getElementById("y").innerHTML=a*b
+    }
+    a = 5
+    b = 5
+</script>
